@@ -1,0 +1,42 @@
+#myLabel {
+    font-size: 100px;
+    display: flex;
+    align-content: end;
+    text-align: center;
+    justify-content: center;
+    color: rgb(253, 252, 252);
+    font-family: monospace;
+    font-style: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    background-image: url(nicolas-thomas-wKlqqfNTLsI-unsplash.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+}
+
+/* Media Query for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+    #myLabel {
+        font-size: 40px;
+    }
+}
+
+/* Media Query for screens between 601px and 1024px */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    #myLabel {
+        font-size: 60px;
+    }
+}
+
+/* Media Query for screens larger than 1024px */
+@media screen and (min-width: 1025px) {
+    #myLabel {
+        font-size: 80px;
+    }
+}
